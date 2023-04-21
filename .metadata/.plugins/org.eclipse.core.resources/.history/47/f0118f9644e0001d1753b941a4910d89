@@ -27,8 +27,6 @@ public class Main {
 		System.out.println("replace a por de abc-xy: -"+s07+"-");
 		System.out.println("indexOf 'bc': -"+i+"-");
 		System.out.println("LastIndexOf 'bc': -"+j+"-");
-		System.out.println("LastIndexOf 'bc': -"+j+"-");
-		
 		
 	}
 
