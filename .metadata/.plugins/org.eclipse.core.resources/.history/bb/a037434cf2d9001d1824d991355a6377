@@ -1,0 +1,20 @@
+package Entities;
+
+public class Contas {
+
+	private Integer numeros;
+
+	public Contas(Integer numeros) {
+		super();
+		this.numeros = numeros;
+	}
+
+	public Integer getNumeros() {
+		return numeros;
+	}
+
+	public void setNumeros(Integer numeros) {
+		this.numeros = numeros;
+	}
+	
+}

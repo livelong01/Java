@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Entities.aluno.java&apos; to &apos;Aluno.java&apos;&#x0D;&#x0A;- Original project: &apos;Aluno&apos;&#x0D;&#x0A;- Original element: &apos;Entities.aluno.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Entities.Aluno.java&apos;" description="Rename compilation unit &apos;aluno.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Entities{aluno.java" name="Aluno.java" references="false" stamp="1680436253495" version="1.0"/>
+</session>

@@ -1,0 +1,24 @@
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+
+		LocalDate d04 = LocalDate.parse("2022-07-20");
+		LocalDateTime d05 = LocalDateTime.parse("2022-07-20T01:30:26");
+		Instant d06 = Instant.parse("2022-07-20T01:30:26Z");
+		
+		// conversao
+		
+		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		System.out.println("D04 = " + d04.format(fmt1)); // com o .format, ele imprime no formato BR.
+		System.out.println("D04 = " + fmt1.format(d06));
+		
+
+	}
+
+}
