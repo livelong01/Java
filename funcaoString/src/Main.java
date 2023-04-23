@@ -13,7 +13,7 @@ public class Main {
 		String s06 = original.replace("a", "x"); //substitiu um caractere por outro na frase.
 		String s07 = original.replace("abc", "xy"); // substi mais de uma letra por outra de tamanho diferente
 		int i = original.indexOf("bc"); // encontra posicao da primeira aparicao do bc
-		int j = original.lastIndexOf("bc"); // encontra ultima aparicao do bc
+		int j = original.lastIndexOf("i"); // encontra ultima aparicao do bc
 	
 		
 		
