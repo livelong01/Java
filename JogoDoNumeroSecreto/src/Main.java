@@ -7,11 +7,11 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc =  new Scanner(System.in);
 		
-		System.out.println("Pense em um numero entre 0 à 100000: ");
+		System.out.println("Pense em um numero entre 0 à 1000: ");
 		int objetivo = sc.nextInt();
 		
 		int inicio = 0;
-		int fim = 100000;
+		int fim = 1024;
 		int meio = (fim + inicio)/2;
 		int i = 0;
 		

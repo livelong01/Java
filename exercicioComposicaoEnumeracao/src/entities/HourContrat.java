@@ -1,10 +1,10 @@
 package entities;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class HourContrat {
 
-	private Date date;
+	private LocalDate date;
 	private Double valuePerHour;
 	private Integer hours;
 	
@@ -14,21 +14,28 @@ public class HourContrat {
 	}
 
 
-	public HourContrat(Date date, Double valuePerHour, Integer hours) {
+
+	public HourContrat(LocalDate date, Double valuePerHour, Integer hours) {
 		this.date = date;
 		this.valuePerHour = valuePerHour;
 		this.hours = hours;
 	}
 
 
-	public Date getDate() {
+
+
+
+
+	public LocalDate getDate() {
 		return date;
 	}
 
 
-	public void setDate(Date date) {
+
+	public void setDate(LocalDate date) {
 		this.date = date;
 	}
+
 
 
 	public Double getValuePerHour() {
@@ -50,5 +57,8 @@ public class HourContrat {
 		this.hours = hours;
 	}
 	
+	public double totalValue() {
+		return valuePerHour * hours;
+	}
 	
 }
