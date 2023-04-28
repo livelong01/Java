@@ -10,13 +10,15 @@ public class Main {
 
 
 		LocalDate d04 = LocalDate.parse("2022-07-20");
-		LocalDateTime d05 = LocalDateTime.parse("2022-07-20T01:30:26");
+		LocalDateTime d05 = LocalDateTime.parse("2022-07-20T01:30:26"); 
+		LocalDateTime d07 = LocalDateTime.parse("2018-06-21T13:05:44");
 		Instant d06 = Instant.parse("2022-07-20T01:30:26Z");
 		
 		// conversao / formatos
 		
 		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		DateTimeFormatter fmt6 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 		DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault()); // o instant tem q instanciar o FUSO HORARIO senao n roda.
 		DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
 		DateTimeFormatter fmt5 = DateTimeFormatter.ISO_INSTANT;
@@ -35,6 +37,8 @@ public class Main {
 		System.out.println("d06 = " + fmt5.format(d06));
 		// LEMBRANDO QUE PARA IMPRIMIR NO FORMATO ISO, PODE APENAS INSTNANCIAR O "TOSTRING" ex:
 		System.out.println("d06 = " + d06.toString());
+		
+		System.out.println(d07.format(fmt6));
 
 	}
 
