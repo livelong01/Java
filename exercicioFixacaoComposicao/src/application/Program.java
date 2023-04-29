@@ -8,7 +8,9 @@ import java.util.Scanner;
 
 import entities.Client;
 import entities.Order;
+import entities.OrderItem;
 import entities.OrderStatus;
+import entities.Product;
 
 public class Program {
 
@@ -34,17 +36,36 @@ public class Program {
 	System.out.println("Enter order data: ");
 	System.out.print("Status: ");
 	sc.nextLine();
-	String status = sc.nextLine();
+	OrderStatus status = OrderStatus.valueOf(sc.next());
 	System.out.print("How many items to this order? ");
 	Integer n = sc.nextInt();
-	Order order = new Order(LocalDateTime.now(), OrderStatus.valueOf(status));
+	
+	Order order = new Order(LocalDateTime.now(), status, client);
 	
 	//System.out.println(order); //SÓ PARA TESTAR SE FUNCIONAVA.
 	
 	for ( int i = 1; i <= n; i++) {
-		System.out.println("Enter #" + i + "item data: ");
-	
+		System.out.println("Enter #" + i + " item data: ");
+		System.out.print("Product Name: ");
+		sc.nextLine();
+		String productName = sc.nextLine();
+		System.out.print("Product Price: ");
+		Double price = sc.nextDouble();
 		
+		Product product = new Product(productName, price);
+		
+		System.out.print("Quantity: ");
+		Integer quantity = sc.nextInt();
+		
+		OrderItem orderItem = new OrderItem(quantity, price, product);
+		
+		order.addItem(orderItem);
+	}
+	
+	System.out.println();
+	System.out.println(order);
+		 
+		 sc.close();
 	}
 	
 	
@@ -54,4 +75,3 @@ public class Program {
 	
 	}
 	
-}

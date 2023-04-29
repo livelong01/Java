@@ -5,7 +5,6 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="Entities.CurrencyConverter"/>
     <fullyQualifiedTypeName name="Entities.Product"/>
-    <fullyQualifiedTypeName name="entities.Product"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="Entities.Employee"/>
     <fullyQualifiedTypeName name="Entities.Contas"/>
@@ -34,4 +33,6 @@
     <fullyQualifiedTypeName name="entities.Client"/>
     <fullyQualifiedTypeName name="entities.Order"/>
     <fullyQualifiedTypeName name="entities.OrderStatus"/>
+    <fullyQualifiedTypeName name="entities.Product"/>
+    <fullyQualifiedTypeName name="entities.OrderItem"/>
 </qualifiedTypeNameHistroy>
