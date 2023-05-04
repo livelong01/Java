@@ -8,7 +8,6 @@
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="Entities.Employee"/>
     <fullyQualifiedTypeName name="Entities.Contas"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.time.Instant"/>
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
@@ -29,10 +28,13 @@
     <fullyQualifiedTypeName name="entities.HourContrat"/>
     <fullyQualifiedTypeName name="entities.Comment"/>
     <fullyQualifiedTypeName name="entities.Post"/>
-    <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="entities.Client"/>
     <fullyQualifiedTypeName name="entities.Order"/>
     <fullyQualifiedTypeName name="entities.OrderStatus"/>
     <fullyQualifiedTypeName name="entities.Product"/>
     <fullyQualifiedTypeName name="entities.OrderItem"/>
+    <fullyQualifiedTypeName name="entities2.Dolar"/>
+    <fullyQualifiedTypeName name="entities.Account"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
